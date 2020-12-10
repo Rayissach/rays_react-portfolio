@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavbarContainer, Nav, NavLogo } from "./navbarElements.js";
+import { NavbarContainer, Nav, NavLogo, NavDropdown, NavItem, NavLinks } from "./navbarElements.js";
 
 
 const Navbar = () => {
@@ -7,7 +7,18 @@ const Navbar = () => {
     <>
         <Nav>
           <NavbarContainer>
-            <NavLogo>Ray</NavLogo>
+            <NavLogo to='/'>Ray</NavLogo>
+            <NavDropdown>
+              <NavItem>
+                <NavLinks to='about'>About</NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to='projects'>Projects</NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to='connect'>Connect</NavLinks>
+              </NavItem>
+            </NavDropdown>
           </NavbarContainer>
         </Nav>
     </>
