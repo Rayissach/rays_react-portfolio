@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavbarContainer, Nav, NavLogo, NavDropdown, NavItem, NavLinks, MobileIcon } from "./navbarElements.js";
-import { FaBars } from 'react-icons/fa';
+// import { FaBars } from 'react-icons/fa';
 // import {Zap} from '@styled-icons/octicons';
-// import { Camera } from 'react-feather';
+import { Menu } from 'react-feather';
 
 const Navbar = () => {
   return (
@@ -11,7 +11,7 @@ const Navbar = () => {
           <NavbarContainer>
             <NavLogo to='/'>Ray</NavLogo>
             <MobileIcon>
-              <FaBars />
+              <Menu />
             </MobileIcon>
             <NavDropdown>
               <NavItem>
