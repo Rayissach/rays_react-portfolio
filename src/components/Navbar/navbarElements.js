@@ -8,17 +8,25 @@ z-index: 10;
 display: flow;
 justify-self: flex-start;
 width: 100%;
+// position: absolute;
+position: static;
+// position: relative;
+/*offset-x | offset-y | blur-radius | spread-radius | color*/
+box-shadow: 0rem -1rem 1rem 1rem black;
+padding: 0px 10px 0px 10px;
 `
 
 export const NavbarContainer = styled.div `
 display: flow;
 margin: auto;
 height: 8vh;
-padding: 0px 10px 0px 10px;
-/*offset-x | offset-y | blur-radius | spread-radius | color*/
-box-shadow: 0rem -1rem 1rem 1rem black;
-position: static;
+// padding: 0px 10px 0px 10px;
+postion: absolute;
+line-spacing: 2px;s
+
+// position: static;
 // justify-content: space-around;
+// width: 30%;
 `
 export const NavLogo = styled(LinkRouter)`
  display: flow;
@@ -30,6 +38,8 @@ export const NavLogo = styled(LinkRouter)`
  background: green;
  padding: 0px 10px 0px 10px;
  line-height: 8vh;
+ left: 0px;
+ width: 5rem;
  ;
 `
 export const MobileIcon = styled.div `
@@ -38,11 +48,15 @@ display: none;
 @media screen and (max-width: 400px){
 display: flow;
 position: absolute;
-font-size: 5rem;
-right: 10px;
-line-height: 8vh;
+font-size: 2.5rem;
+height: 8vh;
 color: white;
-// margin: auto;
+margin: auto;
+float: right;
+// background: blue;
+width: 2rem;
+right: 4px;
+padding: 5px;
 
 }
 `
@@ -56,8 +70,9 @@ export const NavDropdown = styled.ul `
 //  background: red;
 //  margin: 1rem 2rem 1rem 2rem;
  margin: auto;
-//  line-height: 8vh;
+ line-height: 8vh;
  bottom: 0;
+//  background: yellow;
 
 
 
