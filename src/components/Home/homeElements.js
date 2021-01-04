@@ -9,10 +9,13 @@ align-content: center;
 height: 100vh;
 `
 
+
 export const WelcomeText = styled.div `
 position: relative;
 display: block;
 margin: auto;
 text-align: center;
-line-height: 100vh;
+// line-height: 100vh;
+color: white;
+// background: yellow;
 `

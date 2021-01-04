@@ -14,6 +14,8 @@ position: static;
 /*offset-x | offset-y | blur-radius | spread-radius | color*/
 box-shadow: 0rem -1rem 1rem 1rem black;
 padding: 0px 10px 0px 10px;
+justify-content: center;
+flex-direction: column!important;
 `
 
 export const NavbarContainer = styled.div `
