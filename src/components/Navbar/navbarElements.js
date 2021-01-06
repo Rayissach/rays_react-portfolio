@@ -24,11 +24,12 @@ margin: auto;
 height: 8vh;
 // padding: 0px 10px 0px 10px;
 postion: absolute;
-line-spacing: 2px;s
+line-spacing: 2px;
 
 // position: static;
 // justify-content: space-around;
 // width: 30%;
+
 `
 export const NavLogo = styled(LinkRouter)`
  display: flow;
@@ -85,13 +86,36 @@ export const NavDropdown = styled.ul `
  };
 `
 export const NavItem = styled.li`
+display: block;
 text-align: center;
-margin-right: 1em;
-// background: green;
+// padding-right: .5em;
+// padding-left: .5em;
+line-spacing: 1rem;
+word-wrap: break-word;
+width: 33.33%;
+margin-auto: center;
+// background: purple;
+align-content: center;
 `
 export const NavLinks = styled(LinkScroll)`
 box-sizing: content-box;
 // border: 2px solid white;
-display: flow;
+display: inline-block;
+word-wrap: break-word;
 color: white;
+text-align: center;
+padding-right: 1em;
+padding-left: 1em;
+// background: blue;
+
+&:hover {
+  background: grey;
+  color: black;
+  opacity: .25;
+}
+@media screen and (max-width: 640px){
+  padding-right: .5em;
+  padding-left: .5em;
+  transition: all 1s ease;
+};
 `

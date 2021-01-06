@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import bgImage1 from '/Users/rayissach/Desktop/Code-Folder/rays_react_portfolio/src/images/shooting_star_background.gif'
+import bgImage1 from '/Users/rayissach/Desktop/Code-Folder/rays_react_portfolio/src/images/shooting_star_background2.gif'
 // import { Link as LinkRouter } from 'react-router-dom';
 // import { Link as LinkScroll} from 'react-scroll';
 
@@ -20,7 +20,7 @@ display: block;
 margin: auto;
 text-align: center;
 // line-height: 100vh;
-color: grey;
+color: silver;
 // background: yellow;
 // word-wrap: break-word;
 // width: 50%;
