@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll} from 'react-scroll';
+import bgImage1 from '/Users/rayissach/Desktop/Code-Folder/rays_react_portfolio/src/images/shooting_star_background2.gif';
 
 export const Nav = styled.nav `
 background: black;
+// background-image: url(${bgImage1});
 z-index: 10;
 display: flow;
 justify-self: flex-start;
