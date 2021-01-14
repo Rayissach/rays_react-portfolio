@@ -1,10 +1,15 @@
 import React from 'react';
-import {ProjectWrapper, PrjContainer} from './projectElements.js'; 
+import {ProjectWrapper, ProjectCards, Span} from './projectElements.js'; 
 
 const Projects = () => {
   return (
       <ProjectWrapper>
-        <PrjContainer></PrjContainer>
+        
+        <ProjectCards>
+        <Span></Span>
+          Hello
+        </ProjectCards>
+        
       </ProjectWrapper>
   )
 }
