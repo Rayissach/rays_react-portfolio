@@ -1,16 +1,23 @@
 import React from 'react';
-import {ProjectWrapper, ProjectCards, Span} from './projectElements.js'; 
+import {ProjectContainer, ProjectWrapper, ProjectCards, Span1, Span2, Span3, Span4} from './projectElements.js'; 
 
 const Projects = () => {
   return (
-      <ProjectWrapper>
-        
-        <ProjectCards>
-        <Span></Span>
-          Hello
-        </ProjectCards>
-        
-      </ProjectWrapper>
+      <ProjectContainer>
+        <ProjectWrapper>
+          {/* <Span1></Span1>
+          <Span2></Span2>
+          <Span3></Span3>
+          <Span4></Span4> */}
+          <ProjectCards>
+          <Span1></Span1>
+          <Span2></Span2>
+          <Span3></Span3>
+          <Span4></Span4>
+            Hello
+          </ProjectCards>
+        </ProjectWrapper>
+      </ProjectContainer>
   )
 }
 
