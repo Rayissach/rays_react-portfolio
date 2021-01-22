@@ -36,15 +36,42 @@ line-spacing: 2px;
 export const NavLogo = styled(LinkRouter)`
  display: flow;
  position: absolute;
- color: white;
+ color: silver;
  text align: center;
  font-size: 2rem;
  text-decoration: none;
- background: green;
+ background: #3511C9;
  padding: 0px 10px 0px 10px;
  line-height: 8vh;
  left: 0px;
  width: 5rem;
+
+ &:hover {
+   background: none;
+   color: #3511C9;
+   opacity: .5;
+   backface-visibility: hidden;
+
+  animation: logo_animation 2s linear infinite;
+
+  @keyframes logo_animation {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+ }
  ;
 `
 export const MobileIcon = styled.div `

@@ -1,17 +1,22 @@
 import styled from 'styled-components';
+import PrjBgImg1 from '/Users/rayissach/Desktop/Code-Folder/rays_react_portfolio/src/images/shooting_star_background.gif';
 
 export const ProjectContainer = styled.div `
-// background: black;
+background: black;
 height: 100vh;
 `
 
 export const ProjectWrapper = styled.div `
 overflow: hidden;
-position: aboslute;
+// position: absolute;
+// text-align: center;
+background: purple;
 `
 
 export const ProjectCards = styled.div `
-background: yellow;
+// background: yellow;
+background-image: url(${PrjBgImg1});
+background-size: cover;
 color: blue;
 position: absolute;
 height: 25vh;
@@ -25,123 +30,128 @@ overflow: hidden;
 
 // z-index: 20;
 `
-export const Span = styled.span `
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 3px;
-background: linear-gradient(to right, transparent, #1779ff);
-animation: animate1 2s linear infinite;
+// export const Span = styled.span `
+// position: absolute;
+// top: 0;
+// left: 0;
+// width: 100%;
+// height: 3px;
+// background: linear-gradient(to right, transparent, #1779ff);
+// animation: animate1 2s linear infinite;
 
 
-@keyframes animate1 
-{
-0% 
-{
-transform: translateX(-100%);
-}
-100%
-{
-transform: translateX(100%);
-}
-}
+// @keyframes animate1 
+// {
+// 0% 
+// {
+// transform: translateX(-100%);
+// }
+// 100%
+// {
+// transform: translateX(100%);
+// }
+// }
 
-`
+// `
+
 export const Span1 = styled.span `
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 3px;
-background: linear-gradient(to right, transparent, #1779ff);
-animation: animate1 2s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, transparent, #1779ff);
+  animation: animate1 2s linear infinite;
 
 
-@keyframes animate1 
-{
-0% 
-{
-transform: translateX(-100%);
-}
-100%
-{
-transform: translateX(100%);
-}
-}
-
+  @keyframes animate1 
+  {
+  0% 
+  {
+  transform: translateX(-100%);
+  }
+  100%
+  {
+  transform: translateX(100%);
+  }
+  }
 `
 
 export const Span2 = styled.span `
-position: absolute;
-top: 0;
-right: 0;
-width: 3px;
-height: 100%;
-background: linear-gradient(to bottom, transparent, #1779ff);
-animation: animate2 2s linear infinite;
-animation-delay: 1s;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, #1779ff);
+  animation: animate2 2s linear infinite;
+  animation-delay: 1s;
 
 
-@keyframes animate2 
-{
-0% 
-{
-transform: translateY(-100%);
-}
-100%
-{
-transform: translateY(100%);
-}
-}
+  @keyframes animate2 
+  {
+  0% 
+  {
+  transform: translateY(-100%);
+  }
+  100%
+  {
+  transform: translateY(100%);
+  }
+  }
+
 
 `
 
 export const Span3 = styled.span `
-position: absolute;
-bottom: 0;
-left: 0;
-width: 100%;
-height: 3px;
-background: linear-gradient(to left, transparent, #1779ff);
-animation: animate3 2s linear infinite;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to left, transparent, #1779ff);
+  animation: animate3 2s linear infinite;
 
 
-@keyframes animate3 
-{
-0% 
-{
-transform: translateX(100%);
-}
-100%
-{
-transform: translateX(-100%);
-}
-}
+  @keyframes animate3 
+  {
+  0% 
+  {
+  transform: translateX(100%);
+  }
+  100%
+  {
+  transform: translateX(-100%);
+  }
+  }
+
 
 `
 
 export const Span4 = styled.span `
-position: absolute;
-bottom: 0;
-left: 0;
-width: 3px;
-height: 100%;
-background: linear-gradient(to top, transparent, #1779ff);
-animation: animate4 2s linear infinite;
-animation-delay: 1s;
 
-
-@keyframes animate4 
-{
-0% 
-{
-transform: translateY(100%);
-}
-100%
-{
-transform: translateY(-100%);
-}
-}
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to top, transparent, #1779ff);
+  animation: animate4 2s linear infinite;
+  animation-delay: 1s;
+  
+  
+  @keyframes animate4 
+  {
+  0% 
+  {
+  transform: translateY(100%);
+  }
+  100%
+  {
+  transform: translateY(-100%);
+  }
+  }
 
 `

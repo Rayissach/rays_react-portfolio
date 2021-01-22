@@ -3,17 +3,14 @@ import {ProjectContainer, ProjectWrapper, ProjectCards, Span1, Span2, Span3, Spa
 
 const Projects = () => {
   return (
-      <ProjectContainer>
-        <ProjectWrapper>
-          {/* <Span1></Span1>
-          <Span2></Span2>
-          <Span3></Span3>
-          <Span4></Span4> */}
-          <ProjectCards>
+      <ProjectContainer class='container'>
+        <ProjectWrapper class='card'>
+          <ProjectCards class='content'>
           <Span1></Span1>
           <Span2></Span2>
           <Span3></Span3>
           <Span4></Span4>
+          
             Hello
           </ProjectCards>
         </ProjectWrapper>
