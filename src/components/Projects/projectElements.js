@@ -2,21 +2,37 @@ import styled from 'styled-components';
 import PrjBgImg1 from '/Users/rayissach/Desktop/Code-Folder/rays_react_portfolio/src/images/shooting_star_background.gif';
 
 export const ProjectContainer = styled.div `
-background: black;
+// background: black;
+background: #111111;
 height: 100vh;
+margin: 0px;
 `
-
+export const CardContainer = styled.div `
+height: 25vh;
+// overflow: hidden;
+display: block;
+// background: yellow;
+position: absolute;
+z-index: 50px;
+width: 25%;
+margin: 20px;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2) ;
+`
 export const ProjectWrapper = styled.div `
-overflow: hidden;
+// overflow: hidden;
 position: absolute;
 text-align: center;
 // background: #333333;
 // background: #111111;
 background: #222222;
 height: 25vh;
-width: 25%;
+width: 100%;
 margin: 20px;
 padding: 10px;
+border-radius: 5%;
+margin: auto;
+
+
 `
 
 export const ProjectCards = styled.div `
@@ -25,7 +41,8 @@ export const ProjectCards = styled.div `
 // margin-right: auto;
 margin: auto;
 display: inline-block;
-background-image: url(${PrjBgImg1});
+// background-image: url(${PrjBgImg1});
+background: #111111;
 background-size: cover;
 color: blue;
 position: relative;
@@ -37,9 +54,17 @@ align: center;
 padding: 25%;
 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2) ;
 // overflow: hidden;
+border-radius: 5%;
+z-index: 100;
+transition: 1s ease;
+transition: background-image s ease;
 
 
-// z-index: 20;
+&:hover {
+  background-image: url(${PrjBgImg1});
+  transform: translateY(-15%);
+  color: silver;
+}
 `
 // export const Span = styled.span `
 // position: absolute;
@@ -73,7 +98,7 @@ export const Span1 = styled.span `
   height: 3px;
   background: linear-gradient(to right, transparent, #1779ff);
   animation: animate1 2s linear infinite;
-
+  opacity: .5;
 
   @keyframes animate1 
   {
@@ -98,6 +123,7 @@ export const Span2 = styled.span `
   background: linear-gradient(to bottom, transparent, #1779ff);
   animation: animate2 2s linear infinite;
   animation-delay: 1s;
+  opacity: .5;
 
 
   @keyframes animate2 
@@ -124,7 +150,7 @@ export const Span3 = styled.span `
   height: 3px;
   background: linear-gradient(to left, transparent, #1779ff);
   animation: animate3 2s linear infinite;
-
+  opacity: .5;
 
   @keyframes animate3 
   {
@@ -151,7 +177,7 @@ export const Span4 = styled.span `
   background: linear-gradient(to top, transparent, #1779ff);
   animation: animate4 2s linear infinite;
   animation-delay: 1s;
-  
+  opacity: .5;
   
   @keyframes animate4 
   {
