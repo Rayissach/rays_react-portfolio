@@ -5,12 +5,11 @@ const Projects = () => {
   return (
       <ProjectContainer class='container'>
         <ProjectWrapper class='card'>
-          <ProjectCards class='content'>
-          <Span1></Span1>
+        <Span1></Span1>
           <Span2></Span2>
           <Span3></Span3>
           <Span4></Span4>
-          
+          <ProjectCards class='content'>
             Hello
           </ProjectCards>
         </ProjectWrapper>

@@ -8,24 +8,35 @@ height: 100vh;
 
 export const ProjectWrapper = styled.div `
 overflow: hidden;
-// position: absolute;
-// text-align: center;
-background: purple;
+position: absolute;
+text-align: center;
+// background: #333333;
+// background: #111111;
+background: #222222;
+height: 25vh;
+width: 25%;
+margin: 20px;
+padding: 10px;
 `
 
 export const ProjectCards = styled.div `
 // background: yellow;
+// margin-left: auto;
+// margin-right: auto;
+margin: auto;
+display: inline-block;
 background-image: url(${PrjBgImg1});
 background-size: cover;
 color: blue;
-position: absolute;
-height: 25vh;
-width: 25%;
-margin: 25px;
+position: relative;
+line-height: 12.5vh;
+height: 95%;
+width: 95%;
 text-align: center;
+align: center;
 padding: 25%;
 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2) ;
-overflow: hidden;
+// overflow: hidden;
 
 
 // z-index: 20;
