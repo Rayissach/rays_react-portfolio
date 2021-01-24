@@ -18,6 +18,7 @@ box-shadow: 0rem -1rem 1rem 1rem black;
 padding: 0px 10px 0px 10px;
 justify-content: center;
 flex-direction: column!important;
+// pointer-events: none;
 `
 
 export const NavbarContainer = styled.div `

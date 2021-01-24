@@ -4,7 +4,7 @@ import PrjBgImg1 from '/Users/rayissach/Desktop/Code-Folder/rays_react_portfolio
 export const ProjectContainer = styled.div `
 // background: black;
 background: #111111;
-height: 100vh;
+min-height: 100vh;
 margin: 0px;
 `
 export const CardContainer = styled.div `
@@ -13,6 +13,8 @@ display: inline-block;
 z-index: 0px;
 height: 25vh;
 width: 25vw;
+min-width: 150px;
+
 margin: 20px;
 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2) ;
 
