@@ -8,15 +8,15 @@ height: 100vh;
 margin: 0px;
 `
 export const CardContainer = styled.div `
+position: relative;
+display: inline-block;
+z-index: 0px;
 height: 25vh;
-// overflow: hidden;
-display: block;
-// background: yellow;
-position: absolute;
-z-index: 50px;
-width: 25%;
+width: 25vw;
 margin: 20px;
 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2) ;
+
+
 `
 export const ProjectWrapper = styled.div `
 // overflow: hidden;
@@ -31,7 +31,11 @@ margin: 20px;
 padding: 10px;
 border-radius: 5%;
 margin: auto;
+overflow: hidden;
 
+&:hover {
+  color: silver;
+}
 
 `
 
@@ -46,7 +50,7 @@ background: #111111;
 background-size: cover;
 color: blue;
 position: relative;
-line-height: 12.5vh;
+// line-height: 12.5vh;
 height: 95%;
 width: 95%;
 text-align: center;
@@ -62,7 +66,19 @@ transition: background-image s ease;
 
 &:hover {
   background-image: url(${PrjBgImg1});
-  transform: translateY(-15%);
+  transform: translateY(-5%);
+  color: silver;
+}
+`
+export const PrjP = styled.h3 `
+color: #3511C9
+text-align: center;
+// word-wrap: break-word;
+overflow-wrap: break-word;
+font-size: 3%;
+display: inline-block;
+
+&:hover{
   color: silver;
 }
 `
