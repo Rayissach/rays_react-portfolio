@@ -1,13 +1,16 @@
 import React from 'react';
 import { PictureInPictureAlt } from 'styled-icons/material';
-import { ContactContainer, ContactForm, ContactWrapper } from './contactElements.js';
+import { ContactContainer, ContactForm, ContactWrapper, Button } from './contactElements.js';
 
 const h1Style = {
   color: 'yellow',
-}
+  padding: '10px'
+};
 const inputStyle = {
   width: '100%',
-}
+  opacity: 0.4,
+  margin: '3px',
+};
 const Contact = () => {
   return (
     <>
@@ -22,6 +25,7 @@ const Contact = () => {
           <input type='text' id='subject' style= {inputStyle}name='subject' placeholder='Subject' />
           <br />
           <textarea type='text' id='Message' style= {inputStyle} rows='8' placeholder='Message' />
+          <Button type='submit' aria-label='✨✨✨✨✨'> Connect </Button>
         </ContactForm>
       </ContactWrapper> 
     </ContactContainer>

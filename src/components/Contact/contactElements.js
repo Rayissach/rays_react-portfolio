@@ -22,15 +22,32 @@ justify-content: center;
 
 export const ContactForm = styled.form `
 width: 50%;
-margin: auto;
-margin: 15%;
+margin: 10% auto;
 // padding: 5%;
 // position: absolute;
-justify-content: space-evenly;
+// justify-content: space-evenly;
 // margin: auto;
 
 @media screen and (max-width:640px){
   font-size: 10px;
 }
+
+`
+
+export const Button = styled.button `
+background: #3511C9;
+color: yellow;
+border: none;
+text-decoration: none;
+text-align: center;
+display: inline-block;
+font-size:16px;
+// padding: 15px 32px;
+width: 100%;
+overflow: auto;
+// word-wrap: break-word;
+positon: relative;
+float: right;
+margin: auto;
 
 `
