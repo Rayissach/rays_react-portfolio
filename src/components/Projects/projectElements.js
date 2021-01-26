@@ -14,10 +14,14 @@ z-index: 0px;
 height: 25vh;
 width: 25vw;
 min-width: 150px;
-
 margin: 20px;
-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2) ;
+box-shadow: 0 8px 16px 0 rgba(245,245,245,0.1);
+transition: 1s ease-in-out;
+border-radius: 5%;
 
+&:hover {
+  box-shadow: 0 8px 16px 0 rgba(245,245,245,0.3);
+}
 
 `
 export const ProjectWrapper = styled.div `
@@ -27,6 +31,7 @@ text-align: center;
 // background: #333333;
 // background: #111111;
 background: #222222;
+// box-shadow: 0 8px 16px 0 rgba(245,245,245,0.1);
 height: 25vh;
 width: 100%;
 margin: 20px;
@@ -35,8 +40,10 @@ border-radius: 5%;
 margin: auto;
 overflow: hidden;
 
+
 &:hover {
   color: silver;
+  background: rgba(0, 133, 45, 0.5);
 }
 
 `
@@ -58,7 +65,7 @@ width: 95%;
 text-align: center;
 align: center;
 padding: 25%;
-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2) ;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8) ;
 // overflow: hidden;
 border-radius: 5%;
 z-index: 100;
@@ -68,7 +75,7 @@ transition: background-image s ease;
 
 &:hover {
   background-image: url(${PrjBgImg1});
-  transform: translateY(-5%);
+  transform: translateY(-4%);
   color: silver;
 }
 `

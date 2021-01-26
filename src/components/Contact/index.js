@@ -6,7 +6,7 @@ const h1Style = {
   color: 'yellow',
 }
 const inputStyle = {
-  height: '20%',
+  width: '100%',
 }
 const Contact = () => {
   return (
@@ -21,7 +21,7 @@ const Contact = () => {
           <br />
           <input type='text' id='subject' style= {inputStyle}name='subject' placeholder='Subject' />
           <br />
-          <textarea type='text' id='Message' style= {inputStyle} placeholder='Message' />
+          <textarea type='text' id='Message' style= {inputStyle} rows='8' placeholder='Message' />
         </ContactForm>
       </ContactWrapper> 
     </ContactContainer>
