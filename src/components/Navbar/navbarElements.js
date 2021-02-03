@@ -18,7 +18,7 @@ box-shadow: 0rem -1rem 1rem 1rem black;
 // flex-direction: column;
 // float: left;
 // flex-wrap: wrap;
-flex-flow: column-wrap;
+// flex-flow: column-wrap;
 // pointer-events: none;
 `
 
@@ -118,12 +118,13 @@ export const NavDropdown = styled.ul `
 `
 export const NavItem = styled.li`
 display: block;
+position: relative;
 text-align: center;
 // padding-right: .5em;
 // padding-left: .5em;
 line-spacing: 1rem;
 word-wrap: break-word;
-width: 33.33%;
+width: 26%;
 margin-auto: center;
 // background: purple;
 align-content: center;
@@ -132,13 +133,14 @@ export const NavLinks = styled(LinkScroll)`
 box-sizing: content-box;
 // border: 2px solid white;
 display: inline-block;
+// display: flow;
 word-wrap: break-word;
 color: white;
 text-align: center;
 
 // padding-right: .5em;
 // padding-left: .5em;
-background: blue;
+// background: blue;
 
 &:hover {
   background: grey;
@@ -146,8 +148,8 @@ background: blue;
   opacity: .25;
 }
 @media screen and (max-width: 640px){
-  padding-right: .5em;
-  padding-left: .5em;
+  // padding-right: .5em;
+  // padding-left: .5em;
   transition: all 1s ease;
 };
 `
