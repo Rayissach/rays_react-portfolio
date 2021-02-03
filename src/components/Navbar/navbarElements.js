@@ -3,32 +3,33 @@ import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScroll} from 'react-scroll';
 import bgImage1 from '/Users/rayissach/Desktop/Code-Folder/rays_react_portfolio/src/images/shooting_star_background2.gif';
 
-export const Nav = styled.nav `
+export const Nav = styled.header `
 background: black;
 // background-image: url(${bgImage1});
-z-index: 10;
-display: flow;
-justify-self: flex-start;
-width: 100%;
-// position: absolute;
-position: static;
-// position: relative;
+z-index: 100px;
+display: inline-block;
+// justify-self: flex-start;
+// min-width: 100%;
+position: fixed;
 /*offset-x | offset-y | blur-radius | spread-radius | color*/
 box-shadow: 0rem -1rem 1rem 1rem black;
-padding: 0px 10px 0px 10px;
-justify-content: center;
-flex-direction: column!important;
+// padding: 0px 10px 0px 10px;
+// justify-content: center;
+// flex-direction: column;
+// float: left;
+// flex-wrap: wrap;
+flex-flow: column-wrap;
 // pointer-events: none;
 `
 
 export const NavbarContainer = styled.div `
 display: flow;
-margin: auto;
+margin: 0 auto;
 height: 8vh;
+align-items: center;
 // padding: 0px 10px 0px 10px;
-postion: absolute;
-line-spacing: 2px;
-
+postion: relative;
+// line-spacing: 2px;
 // position: static;
 // justify-content: space-around;
 // width: 30%;
@@ -36,7 +37,7 @@ line-spacing: 2px;
 `
 export const NavLogo = styled(LinkRouter)`
  display: flow;
- position: absolute;
+ position: relative;
  color: silver;
  text align: center;
  font-size: 2rem;
@@ -134,9 +135,10 @@ display: inline-block;
 word-wrap: break-word;
 color: white;
 text-align: center;
-padding-right: 1em;
-padding-left: 1em;
-// background: blue;
+
+// padding-right: .5em;
+// padding-left: .5em;
+background: blue;
 
 &:hover {
   background: grey;
