@@ -3,7 +3,7 @@ import { PictureInPictureAlt } from 'styled-icons/material';
 import { ContactContainer, ContactForm, ContactWrapper, Button } from './contactElements.js';
 
 const h1Style = {
-  color: 'yellow',
+  color: '#D8BFD8',
   padding: '10px'
 };
 const inputStyle = {

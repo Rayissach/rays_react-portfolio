@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ContactContainer = styled.div `
-background: grey;
+background: #708090;
 height: 75vh;
 width: 100%;
 position: absolute;
@@ -18,6 +18,9 @@ margin: 10%;
 text-decoration: none;
 background: black;
 justify-content: center;
+background: rgb(169,169,169, 0.3);
+border: 4px solid rgb(0,0,0, 0.4);
+border-radius: 10px;
 `
 
 export const ContactForm = styled.form `
@@ -36,8 +39,9 @@ margin: 10% auto;
 
 export const Button = styled.button `
 background: #3511C9;
-color: yellow;
+color: #D8BFD8;
 border: none;
+border-radius: 10px;
 text-decoration: none;
 text-align: center;
 display: inline-block;
